@@ -1,4 +1,4 @@
-﻿using OpenQA.Selenium.Firefox;
+﻿using OpenQA.Selenium.Chrome;
 
 namespace GoogleSearch
 {
@@ -11,7 +11,7 @@ namespace GoogleSearch
     {
         public string Expect = "Google";
         public string Actual = "Hello";
-        private readonly IWebDriver _driver = new FirefoxDriver();
+        private readonly IWebDriver _driver = new ChromeDriver();
 
         [Test]
         public void OpenPage()
