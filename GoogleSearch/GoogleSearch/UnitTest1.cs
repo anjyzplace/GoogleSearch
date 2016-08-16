@@ -1,8 +1,9 @@
-﻿namespace GoogleSearch
+﻿using OpenQA.Selenium.Firefox;
+
+namespace GoogleSearch
 {
     using NUnit.Framework;
     using OpenQA.Selenium;
-    using OpenQA.Selenium.Chrome;
     using System;
 
     [TestFixture]
@@ -10,7 +11,7 @@
     {
         public string Expect = "Google";
         public string Actual = "Hello";
-        private readonly IWebDriver _driver = new ChromeDriver();
+        private readonly IWebDriver _driver = new FirefoxDriver();
 
         [Test]
         public void OpenPage()
